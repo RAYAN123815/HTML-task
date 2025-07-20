@@ -1,0 +1,92 @@
+
+
+body
+{ 
+    background-color: rgb(24, 24, 24);
+}
+
+.shoe-card
+{
+    margin:200px;
+    border-color: rgb(28, 21, 85);
+    height: 450px;
+    width: 800px;
+    background-color: rgb(30, 25, 46);
+}
+
+.shoeposition
+{
+  padding: 10px;
+  border: 10px;
+  background-color: rgb(243, 104, 5);
+  border-color: rgb(231, 150, 28);
+  border-top-right-radius:200px;
+  border-bottom-right-radius:200px;
+  object-fit: contain;
+  margin-right: 30px;
+  height: 95.5%;
+  width: 50%
+
+}
+.shoeposition img
+{
+    object-fit: contain;
+
+    margin-left: -50;
+    margin-bottom: -50;
+    width: 450;
+    height:500;
+}
+
+
+.shoe-details
+{
+    padding: 10px;
+    width:50%;
+}
+.shoe-details span
+{
+    float: right;
+}
+
+
+.shoe-details h1
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: left;
+    text-align: center;
+}
+
+.shoe-details p
+{
+  color: aliceblue;
+  font-size: 24px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+
+.shoe-details h3
+{
+  color: aliceblue;
+  font-size:36px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.shoe-details h2 strong 
+{
+  color: rgb(52, 141, 214);
+  font-size:30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.shoe-details h2 del
+{
+  color: rgb(52, 141, 214);
+  font-size:30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
