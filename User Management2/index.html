@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 40px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .header {
+      background: linear-gradient(to right, #1e90ff, #00bfff);
+      padding: 20px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .top-buttons {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 20px;
+      gap: 10px;
+      background:linear-gradient(to right, #1e90ff, #00bfff);
+    }
+    .top-buttons button {
+      border: none;
+      padding: 8px 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .top-buttons .export {
+      background: #007bff;
+      color: white;
+    }
+    .top-buttons .add {
+      background: #28a745;
+      color: white;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0;
+    }
+    th, td {
+      padding: 14px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+      vertical-align: middle;
+    }
+    th {
+      background: #f9f9f9;
+      font-weight: bold;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .profile img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .status-dot {
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 6px;
+    }
+    .active { background-color: green; }
+    .suspended { background-color: red; }
+    .inactive { background-color: orange; }
+    .action-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+    }
+    .action-btn svg {
+      width: 32px;
+      height: 32px;
+    }
+    .pagination {
+      padding: 10px 20px;
+      font-size: 14px;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .pagination span,
+    .pagination div span.page {
+      margin: 0 3px;
+      padding: 4px 8px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .pagination .page:hover {
+      background-color: #00aaff;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">User Management</div>
+    <div class="top-buttons">
+      <button class="export">&#128196; Export to Excel</button>
+      <button class="add">&#10133; Add New User</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Date Created</th>
+          <th>Role</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td class="profile"><img src="https://i.pravatar.cc/32?img=1"> Michael Holz</td>
+          <td>04/10/2013</td>
+          <td>Admin</td>
+          <td><span class="status-dot active"></span> Active</td>
+          <td>
+            <button class="action-btn" title="Settings" onclick="alert('Settings clicked')">
+              ⚙️
+            </button>
+            <button class="action-btn" title="Delete" onclick="alert('Delete clicked')">
+              ❌
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="profile"><img src="https://i.pravatar.cc/32?img=2"> Paula Wilson</td>
+          <td>05/08/2014</td>
+          <td>Editor</td>
+          <td><span class="status-dot suspended"></span> Suspended</td>
+          <td>
+            <button class="action-btn" title="Settings" onclick="alert('Settings clicked')">
+              ⚙️
+            </button>
+            <button class="action-btn" title="Delete" onclick="alert('Delete clicked')">
+              ❌
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="profile"><img src="https://i.pravatar.cc/32?img=3"> Antonio Moreno</td>
+          <td>11/15/2015</td>
+          <td>Subscriber</td>
+          <td><span class="status-dot inactive"></span> Inactive</td>
+          <td>
+            <button class="action-btn" title="Settings" onclick="alert('Settings clicked')">
+              ⚙️
+            </button>
+            <button class="action-btn" title="Delete" onclick="alert('Delete clicked')">
+              ❌
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="profile"><img src="https://i.pravatar.cc/32?img=4"> Mary Saveley</td>
+          <td>07/21/2016</td>
+          <td>Editor</td>
+          <td><span class="status-dot active"></span> Active</td>
+          <td>
+            <button class="action-btn" title="Settings" onclick="alert('Settings clicked')">
+              ⚙️
+            </button>
+            <button class="action-btn" title="Delete" onclick="alert('Delete clicked')">
+              ❌
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="profile"><img src="https://i.pravatar.cc/32?img=5"> Somer Chou</td>
+          <td>09/30/2017</td>
+          <td>Subscriber</td>
+          <td><span class="status-dot active"></span> Active</td>
+          <td>
+            <button class="action-btn" title="Settings" onclick="alert('Settings clicked')">
+              ⚙️
+            </button>
+            <button class="action-btn" title="Delete" onclick="alert('Delete clicked')">
+              ❌
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagination">
+      <div>Showing <b>5</b> out of <b>25</b> entries</div>
+      <div>
+        <span class="page">Previous</span>
+        <span class="page">1</span>
+        <span class="page">2</span>
+        <span class="page">3</span>
+        <span class="page">4</span>
+        <span class="page">5</span>
+        <span class="page">Next</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
