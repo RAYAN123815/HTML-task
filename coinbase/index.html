@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+* {
+      margin: 0; 
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      
+    }
+/* navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 32px;
+      background-color: white;
+      border-bottom: 1px solid #e5e5e5;
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #0052ff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-size: 15px;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #0052ff;
+    }
+
+    .actions {
+      display: flex;
+      gap: 16px;
+    }
+
+    .login {
+      background: none;
+      border: none;
+      color: #0052ff;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .get-started {
+      background-color: #0052ff;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .get-started:hover {
+      background-color: #003bbf;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+    }
+.Bodywrapper{
+     height: auto;
+    width: 1200px;
+    padding: auto;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+/* section 1 */
+.sec1{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.sec1 h1{font-size: 55px;}
+.sec1-con {
+    align-content: center;
+}
+.sec1-con p{font-size:30px ;}
+.sec1-con input{
+    border: 1px solid grey;
+    height: 50px;
+    width: 325px;
+    border-radius: 10px;
+}
+.sec1-con button {
+    font-size: 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(29, 89, 255);
+    width: 120px;
+    height:50px
+    
+}
+.sec1-con button:hover {
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(3, 3, 255);
+    width: 120px;
+    height:50px;
+}
+
+/* section 2 */
+.sec2{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.sec2 h1{
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sec2-con {
+    align-content: center;
+}
+.sec2-con p{font-size:30px ;}
+.sec2-con input{
+    border: 1px solid grey;
+    height: 50px;
+    width: 325px;
+    border-radius: 10px;
+}
+.sec2-con button {
+    font-size: 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(29, 89, 255);
+    width: 120px;
+    height:50px
+    
+}
+.sec2-con button:hover {
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(3, 3, 255);
+    width: 120px;
+    height:50px;
+}
+/* USDC */
+.USDC{
+    box-sizing: border-box;
+    display: flex;
+    background-color: #333;
+    justify-content: space-between;
+    color: #e5e5e5;
+    padding: 50px;
+}
+.USDC button{
+    font-size: 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    color: rgb(49, 49, 49);
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    width: 120px;
+    height:50px
+}
+.USDC button:hover{
+    font-size: 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    width: 120px;
+    height:50px
+}
+/* section 3 */
+.sec3{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.sec3 h1{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sec3-con {
+    align-content: center;
+    margin-left: 150px;
+}
+.sec3-con p{font-size:25px ;}
+.sec3-con button {
+    font-size: 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(29, 89, 255);
+    width: 120px;
+    height:50px
+    
+}
+.sec3-con button:hover {
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(3, 3, 255);
+    width: 120px;
+    height:50px;
+}
+/* section 4 */
+.sec4{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.sec4 h1{
+    font-size: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sec4-con {
+    align-content: center;
+    margin-left: 150px;
+}
+.sec4-con p{font-size:21px ;}
+.sec4-con button {
+    font-size: 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(29, 89, 255);
+    width: 120px;
+    height:50px
+    
+}
+.sec4-con button:hover {
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(3, 3, 255);
+    width: 120px;
+    height:50px;
+}
+
+/* section 5 */
+.sec5{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.sec5 h1{
+    font-size: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sec5-con {
+    align-content: center;
+    margin-left: 150px;
+}
+.sec5-con p{font-size:21px ;}
+.sec5-con button {
+    font-size: 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(29, 89, 255);
+    width: 120px;
+    height:50px
+    
+}
+.sec5-con button:hover {
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(3, 3, 255);
+    width: 120px;
+    height:50px;
+}
+/* section 6 */
+.sec6{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.sec6 h1{
+    font-size: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sec6-con {
+    align-content: center;
+    margin-left: 150px;
+}
+.sec6-con p{font-size:21px ;}
+.sec6-con button {
+    font-size: 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(29, 89, 255);
+    width: 120px;
+    height:50px
+    
+}
+.sec6-con button:hover {
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(3, 3, 255);
+    width: 120px;
+    height:50px;
+}
+/* extra-details */
+.x-det{
+    padding: 20px;
+
+}
+.sin-up{
+    display: flex;
+}
+.sin-up h1{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sin-up p{font-size:21px ;}
+
+.sin-up button {
+    margin-left: 250px;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(3, 3, 255);
+    width: 120px;
+    height:50px
+    
+}
+.sin-up button:hover{
+    margin-left: 250px;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(29, 89, 255);
+    width: 120px;
+    height:50px
+    
+}
+/* content of the extra details */
+.x-det-con{
+    display: flex;
+}
+.x-det-con div{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 20px;
+    height: 400px;
+    width: 900px;
+    box-shadow:  5px 5px 10px 3px rgba(0, 0, 0, 0.3);
+}
+.x-det-con div p{
+    color: grey;}
+/* know how about crypto*/
+.About-crypto{
+    background-color:rgba(189, 181, 181, 0.3);
+    padding: 30px;
+}
+.crypto{
+    display: flex;
+}
+.crypto p{
+    font-size: 20px;
+    color: grey;
+}
+.crypto button{
+    margin-left: 250px;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(3, 3, 255);
+    width: 120px;
+    height:50px
+}
+.crypto button:hover{
+    margin-left: 250px;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(42, 42, 255);
+    width: 120px;
+    height:50px
+}
+.crypto-basics{
+    display:flex
+}
+.crypto-basics div{
+    margin: 10px;
+}
+.crypto-basics h1{
+    font-size: 30px;
+}
+.crypto-basics h1:hover{
+    font-size: 30px;
+    color: #0052ff
+}
+.crypto-basics p{
+    font-size: 20px;
+    color: grey;
+}
+.crypto-basics img{
+    border-radius: 20px;
+}
+.learn-more{
+    display: flex;
+    justify-content: space-between;
+}
+
+.learn-more button{
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(3, 3, 255);
+    width: 120px;
+    height:50px
+}
+.learn-more button:hover{
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(29, 29, 175);
+    width: 120px;
+    height:50px
+}
+.lm-con{
+    margin-top: 300px;
+}
+.lm-con h1{
+    font-size: 50px;
+}
+.lm-con p{
+    font-size: 30px;
+}
+.portfolio{
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #333;
+    display: flex;
+    margin: none;
+    width: auto;
+}
+.portfolio h1{
+    color: #e5e5e5;
+}
+.portfolio p{
+    font-size: 20px;
+   color: #e5e5e5;
+}
+
+.portfolio button{
+    float: left;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    color: rgb(49, 49, 49);
+    font-weight: bold;
+    background-color: rgb(252, 252, 255);
+    width: 120px;
+    height:50px
+}
+.portfolio button:hover{
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    width: 120px;
+    height:50px
+}
+.final-section{
+    display: flex;
+}
+.final-section div{
+    padding: 30px;
+}
+.final-section table{
+    text-align: left;
+}
+.final-section th{
+    padding-top: 20px;
+}
+</style>
+</head>
+<body >
+<nav class="navbar">
+    <div class="logo">Coinbase</div>
+    
+    <div class="nav-links">
+      <a href="#">Explore</a>
+      <a href="#">Learn</a>
+      <a href="#">Individuals</a>
+      <a href="#">Businesses</a>
+      <a href="#">Developers</a>
+      <a href="#">Company</a>
+    </div>
+
+    <div class="actions">
+      <button class="login">Log in</button>
+      <button class="get-started">Get started</button>
+    </div>
+  </nav>
+
+
+<div class="Bodywrapper">
+<section>
+    <div class="sec1">
+        <div><img src="../hero_3x_B.avif" height="700px" width="700px" ></div>
+        <div class="sec1-con"><span><h1>The future of money is here</h1></span>
+            <p>We're the most trusted place for people and businesses to buy, sell, and manage crypto.</p>
+            <br>
+            <b>Email Address</b>
+            <br>
+            <input type="email" name="" placeholder="example@mail.com">
+            <button>Sign up</button>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="sec2">
+        <div class="sec2-con">
+            <p>Take control of your money</p>
+            <span><h1>Start your portfolio today and discover crypto</h1></span>
+            <br>
+            <b>Email Address</b>
+            <br>
+            <input type="email" name="" placeholder="example@mail.com">
+            <button>Sign up</button>
+        </div>
+        <div><img src="../Type_Circles_4x.avif" height="400px" width="500px" ></div>   
+    </div>
+<section>
+    <div class="USDC">
+    <div>
+        <span><h1>USDC is the dollar for the digital age</h1></span>
+    </div>
+    <div>
+        <p>USDC gives you 24/7 access to payments and financial services. Trade, spend, and send faster and more efficiently.</p>
+        <button>Learn more</button>
+    </div>
+    </div>
+    <div>
+        <img src="../cb-banner.avif" height="400px" width="100%">
+    </div>
+</section>
+</section>
+<section>
+    <div class="sec3">
+        <div><img src="../Retail.avif" height="700px" width="400px" ></div>
+         <div class="sec3-con">
+            <span><h1>Buy, sell, and store hundreds of cryptocurrencies</h1></span>
+            <br><br>
+            <p>From Bitcoin to Dogecoin, we make it easy to buy and sell cryptocurrency. Protect your crypto with best in class cold storage.</p>
+            <br><br>
+            <button>Sign up now</button>
+            </div>
+        </div>
+        
+</section>
+<section>
+    <div class="sec4">
+        <div><img src="../Advanced.avif" height="700px" width="400px" ></div>
+         <div class="sec4-con">
+            <span><h1>Powerful tools, designed for the advanced trader</h1></span>
+            <br><br>
+            <p>Powerful analytical tools with the safety and security of Coinbase deliver the ultimate trading experience. Tap into sophisticated charting capabilities, real-time order books, and deep liquidity across hundreds of markets.</p>
+            <br><br>
+            <button>Start trading</button>
+            </div>
+        </div>
+        
+</section>
+<section>
+    <div class="sec5">
+        <div><img src="../Wallet.avif" height="700px" width="400px" ></div>
+         <div class="sec5-con">
+            <span><h1>Do more with your crypto with Coinbase Wallet</h1></span>
+            <br><br>
+            <p>Store your crypto in your own personal crypto wallet and explore decentralized finance (DeFi), buy and sell NFTs, and more.</p>
+            <br><br>
+            <button>Learn more</button>
+            </div>
+        </div>
+        
+</section>
+<section>
+    <div class="sec6">
+        <div><img src="../Prime.avif" height="700px" width="400px" ></div>
+         <div class="sec6-con">
+            <span><h1>The financial institution for a digital asset future</h1></span>
+            <br><br>
+            <p>Coinbase Prime is the first choice for sophisticated investors and institutions that want to invest in digital assets.</p>
+            <br><br>
+            <button>Learn more</button>
+            </div>
+        </div>
+        
+</section>
+<section>
+    <div class="x-det">
+            <div class="sin-up">
+            <div>
+            <span><h1>The most trusted cryptocurrency exchange</h1></span><br>
+            <p>We're the most trusted place for people and businesses to buy, sell, and manage crypto.</p>
+            </div>
+            <div>
+                <button>Sign up</button>
+            </div>
+            </div><br><br>
+        <div class="x-det-con">
+            <div>
+                <img src="../worldwide-3.svg" height="100px" width="100px">
+                <br><br>
+                <span><h1>The largest public crypto company</h1></span><br>
+                <p>We operate with financial transparency.</p>
+            </div>
+            <div>
+                <img src="../safe-3.svg" height="100px" width="100px">
+                <br><br>
+                <span><h1>Your assets are protected</h1></span><br>
+                <p>Our risk management measures are designed to protect your assets.</p>
+            </div>
+            <div>
+                <img src="../support-5.svg" height="100px" width="100px">
+                <br><br>
+                <span><h1>Get the help you need, when you need it</h1></span><br>
+                <p>You can always contact our support team for quick solutions to common problems.</p>
+            </div>
+            <div>
+                <img src="../economyGlobal-3.svg" height="100px" width="100px">
+                <br><br>
+                <span><h1>Industry best practices</h1></span><br>
+                <p>Coinbase supports a variety of the most popular digital currencies.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+<div class="About-crypto">
+    <div class="crypto">
+        <div>
+            <span><h1>New to crypto? Learn some crypto basics</h1></span><br>
+            <p>Beginner guides, practical tips, and market updates for first-timers, experienced investors, and everyone in between</p>
+        </div>
+        <div>
+            <button>Read more</button>
+        </div>
+    </div>
+    <br><br>
+    <div class="crypto-basics">
+        <div>
+            <img src="../0_4mVyVaU6yLa--GR_.avif" height="250px" width="400px">
+            <br>
+            <span><h1>USDC: The digital dollar for the global crypto economy</h1></span>
+            <br>
+            <p>Coinbase believes crypto will be part of the solution for creating an open financial system that is both more efficient and more equitable. We co-founded the Centre Consortium in 2018 to invest in the build of USDC, and since then it has become the second largest stablecoin by market capitalization.</p>
+        </div>
+        <div>
+            <img src="../Replace_Bank.avif" height="250px" width="200px">
+            <br>
+            <span><h1>Can crypto really replace your bank account?</h1></span>
+            <br>
+            <p>If you’re a big enough fan of crypto, you’ve probably heard the phrase “be your own bank” or the term “bankless” — the idea being that crypto can offer more control over your financial future than traditional finance. But how much of your financial life really can be accomplished via crypto?</p>
+        </div>
+        <div>
+             <img src="../Learn_Illustration_Ultimate_Guide_Bitcoin.avif" height="250px" width="400px">
+             <br>
+            <span><h1>When is the best time to invest in crypto?</h1></span>
+            <br>
+            <p>Cryptocurrencies like Bitcoin can experience daily (or even hourly) price volatility. As with any kind of investment, volatility may cause uncertainty, fear of missing out, or fear of participating at all. When prices are fluctuating, how do you know when to buy?</p>
+        </div>
+
+    </div>
+</div>
+</section>
+<section>
+    <div class="learn-more">
+        <div class="lm-con">
+            <span><h1>The freedom of crypto for everyone, everywhere</h1></span><br><br>
+            <p>We’re committed to creating more economic freedom through accessible, safe, and secure financial tools for everyone.</p><br><br>
+            <button>Learn more</button>
+        </div>
+        <div>
+            <img src="../tools.avif" height="400px" width="500px">
+        </div>
+    </div>
+</section><br><br><br><br>
+<section>
+    <div class="portfolio">
+        <div>
+        <span><h1>Start your portfolio today</h1></span>
+        </div>
+        <div>
+            <p>Sign up for a Coinbase account today and see what the world of decentralized finance can do for you.</p><br>
+            <button>Sign up</button>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="final-section">
+        <div class="footer-container">
+  <div class="left-section">
+    <div class="logo">
+      <span class="coinbase-logo">coinbase</span>
+    </div>
+
+    <p>© 2025 Coinbase</p>
+
+    <p class="social-links">
+      <a href="#">Blog</a> • 
+      <a href="#">X</a> • 
+      <a href="#">Facebook</a>
+    </p>
+
+    <div class="language-selector">
+      🌐 Global | English
+    </div>
+  </div>
+</div>
+        <div> 
+    <table>                   
+    <tr><th>Company</th></tr>
+    <tr><td>About</td></tr>
+    <tr><td>Careers</td></tr>
+    <tr><td>Affiliates</td></tr>
+    <tr><td>Blog</td></tr>
+    <tr><td>Press</td></tr>
+    <tr><td>Security</td></tr>
+    <tr><td>Investors</td></tr>
+    <tr><td>Vendors</td></tr>
+    <tr><td>Legal & privacy</td></tr>
+    <tr><td>Cookie policy</td></tr>
+    <tr><td>Cookie preferences</td></tr>
+    <tr><td>Do Not Share My Personal Information</td></tr>
+    <tr><td>Digital Asset Disclosures</td></tr>
+    <tr><th>Learn</th></tr>
+    <tr><td>Explore</td></tr>
+    <tr><td>Coinbase Bytes newsletter</td></tr>
+    <tr><td>Crypto basics</td></tr>
+    <tr><td>Tips & tutorials</td></tr>
+    <tr><td>Crypto glossary</td></tr>
+    <tr><td>Market updates</td></tr>
+    <tr><td>What is Bitcoin?</td></tr>
+    <tr><td>What is crypto?</td></tr>
+    <tr><td>What is a blockchain?</td></tr>
+    <tr><td>How to set up a crypto wallet</td></tr>
+    <tr><td>How to send crypto</td></tr>
+    <tr><td>Taxes</td></tr>
+   </table> 
+</div>
+    <div>
+    <table>
+    <tr><th>Individuals</th></tr>
+    <tr><td>Buy & sell</td></tr>
+    <tr><td>Earn free crypto</td></tr>
+    <tr><td>Base App</td></tr>
+    <tr><td>Coinbase One</td></tr>
+    <tr><td>Debit Card</td></tr>
+    <tr><th>Businesses</th></tr>
+    <tr><td>Asset Listings</td></tr>
+    <tr><td>Commerce</td></tr>
+    
+
+
+
+
+
+
+    <tr><th>Institutions</th></tr>
+    <tr><td>Prime</td></tr>
+    <tr><td>Staking</td></tr>
+    <tr><td>Exchange</td></tr>
+    <tr><td>International Exchange</td></tr>
+    <tr><td>Derivatives Exchange</td></tr>
+    <tr><td>Verified Pools</td></tr>
+    
+    <tr><th>Developers</th></tr>
+    <tr><td>Developer Platform</td></tr>
+    <tr><td>Base</td></tr>
+    <tr><td>Staking</td></tr>
+    <tr><td>Onramp</td></tr>
+    <tr><td>Wallets</td></tr>
+    <tr><td>Wallet SDK</td></tr>
+    <tr><td>Coinbase App</td></tr>
+    <tr><td>Exchange API</td></tr>
+    <tr><td>Prime API</td></tr>
+    <tr><td>Base Node</td></tr>
+    <tr><td>OnchainKit</td></tr>
+   </table> 
+    </div>
+<div>
+    <table>
+<tr><th>Support</th></tr>
+<tr><td>Help center</td></tr>
+<tr><td>Contact us</td></tr>
+<tr><td>Create account</td></tr>
+<tr><td>ID verification</td></tr>
+<tr><td>Account information</td></tr>
+<tr><td>Payment methods</td></tr>
+<tr><td>Account access</td></tr>
+<tr><td>Supported crypto</td></tr>
+<tr><td>Status</td></tr>
+
+<tr><th>Asset prices</th></tr>
+<tr><td>Bitcoin price</td></tr>
+<tr><td>Ethereum price</td></tr>
+<tr><td>Solana price</td></tr>
+<tr><td>XRP price</td></tr>
+</table>
+</div>
+    </div>  
+</section>
+</div>
+ 
+</body>
+</html>
+
+
+
